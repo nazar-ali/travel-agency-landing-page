@@ -10,7 +10,7 @@ import Footer from "./components/layout/Footer";
 function App() {
   return (
     <>
-    <div className="pl-[148px] pr-[148px] pt-[48px] flex justify-center bg-white">
+    <div className="pl-[148px] pr-[148px] pt-[30px] flex justify-center bg-white">
       <div className="">
       <Navbar />
       <Hero />
