@@ -1,3 +1,4 @@
+import {  Heart } from "lucide-react";
 import imageTrip from "../../assets/images/sc.jpg";
 import chooseDestination from "../../assets/chooseDestination.jsx";
 import makePayment from "../../assets/paymentIcon.jsx";
