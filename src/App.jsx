@@ -1,7 +1,7 @@
 import Navbar from "./components/layout/Navbar.jsx";
 import Hero from "./components/section/Hero.jsx";
 import Services from "./components/section/Services.jsx";
-// import Destinations from "./components/Destinations";
+import Destinations from "./components/section/Destination.jsx";
 // import BookingSteps from "./components/BookingSteps";
 // import Partners from "./components/Partners";
 // import Subscribe from "./components/Subscribe";
@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      {/* <Destinations /> */}
+      <Destinations />
       {/* <BookingSteps /> */}
       {/* <Partners /> */}
       {/* <Subscribe /> */}
