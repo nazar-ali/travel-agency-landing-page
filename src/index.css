@@ -1,0 +1,91 @@
+/* =========================
+   IMPORTS (MUST BE FIRST)
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap');
+@import "tailwindcss";
+
+/* =========================
+   DESIGN TOKENS (CSS VARS)
+========================= */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 231 54% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 231 54% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 231 54% 17%;
+
+    --primary: 40 93% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 235 20% 44%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 235 20% 44%;
+
+    --accent: 259 79% 66%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 40 93% 48%;
+
+    --radius: 0.625rem;
+
+    /* Jadoo Colors */
+    --jadoo-orange: 40 93% 48%;
+    --jadoo-dark: 231 54% 17%;
+    --jadoo-text: 235 20% 44%;
+    --jadoo-purple: 259 79% 66%;
+    --jadoo-pink: 340 82% 76%;
+    --jadoo-yellow: 45 97% 63%;
+    --jadoo-red: 0 85% 60%;
+  }
+
+  .dark {
+    --background: 231 54% 8%;
+    --foreground: 0 0% 98%;
+    --border: 231 54% 20%;
+    --input: 231 54% 20%;
+  }
+}
+
+/* =========================
+   GLOBAL BASE STYLES
+========================= */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* =========================
+   FONT UTILITIES
+========================= */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-volkhov {
+  font-family: 'Volkhov', serif;
+}
