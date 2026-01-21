@@ -4,21 +4,21 @@ import Services from "./components/section/Services.jsx";
 import Destinations from "./components/section/Destination.jsx";
 import BookingSteps from "./components/section/BookingSteps.jsx";
 import Partners from "./components/section/Partner.jsx";
-// import Subscribe from "./components/Subscribe";
+import Subscribe from "./components/section/Subscribe.jsx";
 import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <>
-    <div className="w-full min-h-screen flex justify-center bg-white">
-      <div className="w-full max-w-[1440px]">
+    <div className="pl-[148px] pr-[148px] pt-[48px] flex justify-center bg-white">
+      <div className="">
       <Navbar />
       <Hero />
       <Services />
       <Destinations />
       <BookingSteps />
       <Partners />
-      {/* <Subscribe /> */}
+      <Subscribe />
       <Footer />
       </div>
       </div>

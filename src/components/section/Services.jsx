@@ -39,7 +39,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20" id="services">
+    <section className="py-20" id="flights">
       <div className="container mx-auto px-4 lg:px-8">
         
         {/* Section Header */}

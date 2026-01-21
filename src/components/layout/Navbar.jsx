@@ -1,10 +1,21 @@
 import { useState } from "react";
 import Logo from "../../assets/logo.jsx";
 
-const NAV_ITEMS = ["Destinations", "Hotels", "Flights", "Bookings"];
+const NAV_ITEMS = [
+  { label: "Destinations", id: "destinations" },
+  { label: "Hotels", id: "hotels" },
+  { label: "Flights", id: "flights" },
+  { label: "Bookings", id: "bookings" },
+];
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+const handleScroll = (id) => {
+  const section = document.getElementById(id);
+  section?.scrollIntoView({ behavior: "smooth" });
+  setOpen(false); // close mobile menu
+};
 
   return (
     <header className="w-full">
@@ -18,12 +29,13 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-10 text-[15px] text-[#212832] font-medium">
           {NAV_ITEMS.map((item) => (
-            <li
-              key={item}
-              className="cursor-pointer hover:text-black"
-            >
-              {item}
-            </li>
+           <li
+  key={item.id}
+  onClick={() => handleScroll(item.id)}
+  className="cursor-pointer hover:text-black"
+>
+  {item.label}
+</li>
           ))}
         </ul>
 

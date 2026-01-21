@@ -4,7 +4,7 @@ import Plan from "../../assets/plan.jsx";
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+    <section className="pt-32 pb-10 lg:pt-30 lg:pb-20 overflow-hidden" id="hotels">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -50,11 +50,11 @@ const Hero = () => {
   />
 
   {/* Floating Elements */}
-  <div className="absolute top-12 left-32 w-24 h-24 bg-jadoo-yellow rounded-2xl z-20 flex items-center justify-center">
+  <div className="absolute top-12 left-26 w-24 h-24 bg-jadoo-yellow rounded-2xl z-20 flex items-center justify-center">
     <Plan />
   </div>
 
-  <div className="absolute top-20 right-10 w-24 h-24 bg-jadoo-purple rounded-xl z-20 flex items-center justify-center">
+  <div className="absolute top-20 right-0 w-24 h-24 bg-jadoo-purple rounded-xl z-20 flex items-center justify-center">
     <Plan />
   </div>
 </div>
