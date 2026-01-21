@@ -1,11 +1,3 @@
-import {
-  MapPin,
-  CreditCard,
-  Plane,
-  Heart,
-  Calendar,
-  Users,
-} from "lucide-react";
 import imageTrip from "../../assets/images/sc.jpg";
 import chooseDestination from "../../assets/chooseDestination.jsx";
 import makePayment from "../../assets/paymentIcon.jsx";
@@ -47,7 +39,6 @@ const BookingSteps = () => {
     <section className="py-20 font-poppins " id="bookings">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content - Steps */}
           <div>
             <span className="text-[#5E6282] font-semibold text-lg uppercase tracking-wider">
               Easy and Fast
@@ -75,9 +66,7 @@ const BookingSteps = () => {
             </div>
           </div>
 
-          {/* Right Content - Trip Card Preview */}
           <div className="relative">
-            {/* Main Card */}
             <div className="bg-background rounded-3xl shadow-2xl p-6 max-w-sm mx-auto">
               <img
                 src={imageTrip}
@@ -114,7 +103,6 @@ const BookingSteps = () => {
               </div>
             </div>
 
-            {/* Floating Mini Card */}
             <div className="absolute w-60 bottom-12 -right-6 lg:right-0 bg-white rounded-2xl shadow-xl p-2 flex items-center gap-4">
               <div className=" bg-white rounded-full flex items-center justify-center p-1.5 ">
                 <img
@@ -137,14 +125,12 @@ const BookingSteps = () => {
                   <div className="bg-[#8A79DF] h-1.5 rounded-full w-2/5" />
                 </div>
 
-                {/* Progress bar */}
                 <div className="mt-2 w-full h-1 bg-muted rounded-full overflow-hidden">
                   <div className="h-full w-2/5 bg-blue rounded-full" />
                 </div>
               </div>
             </div>
 
-            {/* Decorative Elements */}
             <div className="absolute -top-8 right-10 w-16 h-16 bg-jadoo-yellow/30 rounded-full blur-xl" />
             <div className="absolute bottom-20 -left-8 w-20 h-20 bg-jadoo-purple/20 rounded-full blur-xl" />
           </div>
